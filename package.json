@@ -1,0 +1,29 @@
+{
+  "name": "conpilot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.16.0",
+    "@vueuse/core": "^10.10.0",
+    "@vueuse/nuxt": "^10.10.0",
+    "monaco-editor": "^0.49.0",
+    "nuxt": "^3.11.2",
+    "nuxt-monaco-editor": "latest",
+    "replicate": "^0.30.1",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "pug": "^3.0.3",
+    "pug-plain-loader": "^1.1.0",
+    "stylus": "^0.63.0",
+    "stylus-loader": "^8.1.0"
+  }
+}
