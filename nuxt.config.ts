@@ -1,5 +1,3 @@
-const stripeTest = process.env.STRIPE_TEST === 'true' ? true : false
-
 export default defineNuxtConfig({
   runtimeConfig: {
     replicateApiToken: process.env.REPLICATE_API_TOKEN,

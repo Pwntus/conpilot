@@ -3359,6 +3359,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conpilot@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "conpilot@workspace:."
+  dependencies:
+    "@nuxt/ui": ^2.16.0
+    "@vueuse/core": ^10.10.0
+    "@vueuse/nuxt": ^10.10.0
+    monaco-editor: ^0.49.0
+    nuxt: ^3.11.2
+    nuxt-monaco-editor: latest
+    pug: ^3.0.3
+    pug-plain-loader: ^1.1.0
+    replicate: ^0.30.1
+    stylus: ^0.63.0
+    stylus-loader: ^8.1.0
+    vue: ^3.4.27
+    vue-router: ^4.3.2
+  languageName: unknown
+  linkType: soft
+
 "consola@npm:^3.2.3":
   version: 3.2.3
   resolution: "consola@npm:3.2.3"
@@ -6405,26 +6425,6 @@ __metadata:
   checksum: a24fd192a26cfd60c3d9dc8ed5ae8cd3a0c38c91bba4f40b87e67925dd3879046e933e2cb61f8a898479ffd1fd74f5c6aa9176aecc1ca271e0f0137dcb44e4a9
   languageName: node
   linkType: hard
-
-"nuxt-app@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nuxt-app@workspace:."
-  dependencies:
-    "@nuxt/ui": ^2.16.0
-    "@vueuse/core": ^10.10.0
-    "@vueuse/nuxt": ^10.10.0
-    monaco-editor: ^0.49.0
-    nuxt: ^3.11.2
-    nuxt-monaco-editor: latest
-    pug: ^3.0.3
-    pug-plain-loader: ^1.1.0
-    replicate: ^0.30.1
-    stylus: ^0.63.0
-    stylus-loader: ^8.1.0
-    vue: ^3.4.27
-    vue-router: ^4.3.2
-  languageName: unknown
-  linkType: soft
 
 "nuxt-icon@npm:^0.6.10":
   version: 0.6.10

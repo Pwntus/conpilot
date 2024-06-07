@@ -1,18 +1,50 @@
 <template lang="pug">
 u-container(class="py-3 sm:py-6 lg:py-8")
-  .window
-    .window-top-bar
-      .window-top-bar-buttons
-        .red
-        .yellow
-        .green
-      .window-top-bar-title Conpilot 1.0
-    .window-content
-      monaco-editor.window-content-editor(
-        v-model="code"
-        :options="{ theme: 'vs-dark', tabSize: 2 }"
-        lang="typescript"
-      )
+
+  #bg-gradient
+
+  .z-10
+    //- Splash
+    .text-center
+      .mb-10
+      .mb-10
+        u-badge(
+          :ui="{ rounded: 'rounded-full' }"
+          label="Conpilot · Your (unhelpful) AI pair programmer"
+          size="md"
+          variant="soft"
+        )
+      .mb-10
+        h1.text-5xl.text-gray-900.font-bold.tracking-tight(
+          class="dark:text-white sm:text-7xl"
+        )
+          | The world’s most   
+          span.text-primary unhelpful 
+          br(class="hidden lg:block")
+          | AI developer tool.
+      .mb-20
+        u-button(
+          href="https://github.com/Pwntus/conpilot"
+          target="_blank"
+          size="sm"
+          icon="i-heroicons-chevron-right"
+          trailing
+          variant="ghost"
+        ) Fork on GitHub
+
+    .window
+      .window-top-bar
+        .window-top-bar-buttons
+          .red
+          .yellow
+          .green
+        .window-top-bar-title Conpilot 1.0
+      .window-content
+        monaco-editor.window-content-editor(
+          v-model="code"
+          :options="{ theme: 'vs-dark', tabSize: 2 }"
+          lang="typescript"
+        )
 </template>
 
 <script>
@@ -82,7 +114,7 @@ const speakText = async (text) => {
 export default {
   name: 'app',
   setup: () => ({
-    code: useLocalStorage('conpilot-code', '')
+    code: useLocalStorage('conpilot-code', '// write some code')
   }),
   data: () => ({
     is_processing: false,
@@ -182,6 +214,15 @@ export default {
 
 <style lang="stylus" scoped>
 div
+  #bg-gradient
+    background radial-gradient(circle, rgba(72,58,197,.75) 0%, rgba(14,10,107,.3) 50%, rgba(18,18,18,1) 100%)
+    aspect-ratio 1
+    z-index -1
+    position absolute
+    top 0
+    left 0
+    right 0
+
   .window
     display flex
     flex-direction column
@@ -198,11 +239,14 @@ div
       .window-top-bar-buttons
         display flex
         column-gap 8px
+        position relative
+        z-index 10
 
         & > div
           width 12px
           height 12px
           border-radius 24px
+          cursor pointer
 
         .red
           background #ec6a5e
