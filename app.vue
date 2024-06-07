@@ -23,14 +23,16 @@ u-container(class="py-3 sm:py-6 lg:py-8")
           br(class="hidden lg:block")
           | AI developer tool.
       .mb-20
-        u-button(
+        a(
           href="https://github.com/Pwntus/conpilot"
-          target="_blank"
-          size="sm"
-          icon="i-heroicons-chevron-right"
-          trailing
-          variant="ghost"
-        ) Fork on GitHub
+          target="_new"
+        )
+          u-button(
+            size="sm"
+            icon="i-heroicons-chevron-right"
+            trailing
+            variant="ghost"
+          ) Fork on GitHub
 
     .window
       .window-top-bar
@@ -215,8 +217,8 @@ export default {
 <style lang="stylus" scoped>
 div
   #bg-gradient
-    background radial-gradient(circle, rgba(72,58,197,.75) 0%, rgba(14,10,107,.3) 50%, rgba(18,18,18,1) 100%)
-    aspect-ratio 1
+    height: 100%
+    background radial-gradient(circle, rgba(72, 58, 197, .75) 0%, rgba(14, 10, 107, .3) 50%, rgba(18, 18, 18, 1) 100%)
     z-index -1
     position absolute
     top 0
