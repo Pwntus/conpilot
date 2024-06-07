@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       title: 'Conpilot · Your (unhelpful) AI pair programmer',
       link: [
         { rel: 'canonical', href: 'https://conpilot.vercel.com' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ],
       meta: [
         { hid: 'charset', charset: 'utf-8' },
