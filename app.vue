@@ -209,7 +209,7 @@ export default {
     window.speechSynthesis.cancel()
 
     // Init debounce function
-    this.startProcessDebounced = useDebounceFn(this.startProcess, 1500)
+    this.startProcessDebounced = useDebounceFn(this.startProcess, 750)
   }
 }
 </script>
