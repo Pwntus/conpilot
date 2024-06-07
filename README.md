@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
+# ⭐ Conpilot ⭐
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Write some code, get roasted by **Conpilot**.
+
+Try it live here: https://conpilot.vercel.app
+
+## How does it work?
+
+**Conpilot** uses [llama-3-8b](https://replicate.com/meta/meta-llama-3-8b-instruct) and the [SpeechSynthesis API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) to roast your code.
 
 ## Setup
 
-Make sure to install the dependencies:
+Clone this repo, make a [Replicate](https://replicate.com) account and update the `.env` file with your API token:
+
+```
+REPLICATE_API_TOKEN="<token>"
+```
+
+## Run it
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

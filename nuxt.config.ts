@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: 'Write some code, get roasted by the conpilot.'
+          content: 'Write some code, get roasted by Conpilot.'
         },
         {
           hid: 'og:type',
@@ -69,7 +69,7 @@ export default defineNuxtConfig({
           hid: 'og:description',
           name: 'og:description',
           property: 'og:description',
-          content: 'Write some code, get roasted by the conpilot.'
+          content: 'Write some code, get roasted by Conpilot.'
         },
         {
           hid: 'og:image',
