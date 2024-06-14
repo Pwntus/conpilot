@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       },
       title: 'Conpilot · Your (unhelpful) AI pair programmer',
       link: [
-        { rel: 'canonical', href: 'https://conpilot.vercel.com' },
+        { rel: 'canonical', href: 'https://conpilot.vercel.app' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ],
       meta: [
@@ -51,13 +51,13 @@ export default defineNuxtConfig({
           hid: 'og:url',
           name: 'og:url',
           property: 'og:url',
-          content: 'https://conpilot.vercel.com'
+          content: 'https://conpilot.vercel.app'
         },
         {
           hid: 'og:site_name',
           name: 'og:site_name',
           property: 'og:site_name',
-          content: 'conpilot.vercel.com'
+          content: 'conpilot.vercel.app'
         },
         {
           hid: 'og:title',
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
           hid: 'og:image',
           name: 'og:image',
           property: 'og:image',
-          content: 'https://conpilot.vercel.com/cover.jpg'
+          content: 'https://conpilot.vercel.app/cover.jpg'
         },
         {
           hid: 'msapplication-TileColor',
@@ -91,7 +91,7 @@ export default defineNuxtConfig({
         {
           hid: 'apple-mobile-web-app-title',
           name: 'apple-mobile-web-app-title',
-          content: 'conpilot.vercel.com'
+          content: 'conpilot.vercel.app'
         }
       ],
       script: [
